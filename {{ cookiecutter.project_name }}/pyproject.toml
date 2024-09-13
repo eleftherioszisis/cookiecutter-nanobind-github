@@ -16,8 +16,13 @@ dependencies = []
 classifiers = []
 license = { text = "{{cookiecutter.open_source_license}}" }
 
-[project.urls]
+[project.optional-dependencies]
+docs = [
+  "sphinx",
+]
 
+
+[project.urls]
 Homepage = "{{cookiecutter.homepage_url}}"
 Documentation = "{{cookiecutter.documentation_url}}"
 Repository = "{{cookiecutter.github_url}}.git"
