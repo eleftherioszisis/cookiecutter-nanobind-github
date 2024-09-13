@@ -1,14 +1,18 @@
 {
   "full_name": "Full Name",
   "email": "full.name@example.com",
-  "github_username": "name",
   "project_name": "my-package",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
-  "pypi_username": "{{ cookiecutter.github_username }}",
+  "github_username": "name",
+  "github_organization": "{{ cookiecutter.github_username }}",
+  "github_url": "https://github.com/{{ cookiecutter.github_organization }}/{{ cookiecutter.project_name }}",
   "version": "0.1.0.dev0",
   "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"],
   "year_from": "{% now 'utc', '%Y' %}",
   "year_to": "{% now 'utc', '%Y' %}",
+  "homepage_url": "{{ cookiecutter.github_url }}",
+  "documentation_url": "https://{{ cookiecutter.project_name }}.readthedocs.io",
+  "issue_tracker_url": "{{ cookiecutter.github_url }}/issues",
   "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
 }

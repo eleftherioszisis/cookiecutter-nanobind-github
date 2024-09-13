@@ -25,7 +25,7 @@ Tests can be run via tox with the following command:
 Documentation
 -------------
 
-* latest: https://{{ cookiecutter.project_name | replace("_", "-") }}.readthedocs.io
+* latest: {{ cookiecutter.documentation_url }}
 
 Acknowledgements
 ----------------
